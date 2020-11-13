@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="@string/hello"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvHello"
+        app:layout_constraintStart_toStartOf="@id/tvHello"
+        android:textSize="32sp"
+        android:textColor="@color/red"
+        tools:text="cenk"
+        android:layout_marginTop="16dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFirstApp"
+        android:text="@string/welcomeWord"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintBottom_toBottomOf="@id/tvName"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
