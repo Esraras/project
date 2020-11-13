@@ -10,29 +10,35 @@
         android:id="@+id/tvHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="27sp"
-        android:text="@string/hello"/>
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:text="@string/hello"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="24dp"/>
 
     <TextView
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvName"
         app:layout_constraintTop_toBottomOf="@id/tvHello"
         app:layout_constraintStart_toStartOf="@id/tvHello"
-        android:textSize="32sp"
+        android:textSize="46sp"
         android:textColor="@color/red"
-        tools:text="cenk"
-        android:layout_marginTop="16dp"
-
+        tools:text="ESRA ARAS"
         />
 
     <TextView
+        android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvFirstApp"
         android:text="@string/welcomeWord"
         app:layout_constraintStart_toStartOf="@id/tvName"
-        app:layout_constraintBottom_toBottomOf="@id/tvName"/>
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/darkGray"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
