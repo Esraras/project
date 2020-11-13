@@ -14,8 +14,10 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
         tvName = (TextView)findViewById(R.id.tvName);
         Bundle bundle = getIntent().getExtras();
+
         strName = bundle.getString("NAME");
         tvName.setText(strName);
 
